@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="100%" height="100%">
+  <defs>
+    <linearGradient id="tealGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0891B2" />
+      <stop offset="100%" stop-color="#0E7490" />
+    </linearGradient>
+    <linearGradient id="darkTealGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0F766E" />
+      <stop offset="100%" stop-color="#115E59" />
+    </linearGradient>
+  </defs>
+
+  <!-- Top bar of hourglass -->
+  <rect x="25" y="16" width="70" height="7" rx="3.5" fill="url(#tealGrad)" />
+
+  <!-- Bottom bar of hourglass -->
+  <rect x="25" y="97" width="70" height="7" rx="3.5" fill="url(#tealGrad)" />
+
+  <!-- Left and Right Pillars -->
+  <rect x="27" y="23" width="5" height="74" rx="2.5" fill="url(#tealGrad)" opacity="0.85" />
+  <rect x="88" y="23" width="5" height="74" rx="2.5" fill="url(#tealGrad)" opacity="0.85" />
+
+  <!-- Hourglass glass contour -->
+  <path d="M 36 25 L 84 25 C 80 48 64 56 60 60 C 56 56 40 48 36 25 Z" fill="url(#tealGrad)" opacity="0.18" stroke="url(#tealGrad)" stroke-width="2.5" stroke-linejoin="round" />
+  <path d="M 36 95 L 84 95 C 80 72 64 64 60 60 C 56 64 40 72 36 95 Z" fill="url(#tealGrad)" opacity="0.18" stroke="url(#tealGrad)" stroke-width="2.5" stroke-linejoin="round" />
+
+  <!-- Sand inside bottom bowl -->
+  <path d="M 43 92 Q 60 76 77 92 Z" fill="url(#tealGrad)" opacity="0.75" />
+
+  <!-- Psychology Symbol Psi (Ψ) in center-right -->
+  <g transform="translate(68, 44) scale(0.9)">
+    <!-- Psi stem -->
+    <path d="M 18 2 L 18 32" stroke="url(#darkTealGrad)" stroke-width="4" stroke-linecap="round" />
+    <!-- Psi curved arms -->
+    <path d="M 6 10 C 6 24 30 24 30 10" fill="none" stroke="url(#darkTealGrad)" stroke-width="4" stroke-linecap="round" />
+    <!-- Psi horizontal base -->
+    <path d="M 11 32 L 25 32" stroke="url(#darkTealGrad)" stroke-width="3.5" stroke-linecap="round" />
+  </g>
+</svg>

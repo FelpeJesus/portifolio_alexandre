@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 700" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F4EFE6" />
+      <stop offset="50%" stop-color="#E8DFD0" />
+      <stop offset="100%" stop-color="#DFD2BE" />
+    </linearGradient>
+    <linearGradient id="suitGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1E293B" />
+      <stop offset="100%" stop-color="#0F172A" />
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#C27852" />
+      <stop offset="100%" stop-color="#9C522E" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background base -->
+  <rect width="600" height="700" rx="32" fill="url(#bgGrad)" />
+
+  <!-- Subtle aesthetic background geometric elements -->
+  <circle cx="150" cy="180" r="140" fill="#EADBC8" opacity="0.6" />
+  <circle cx="480" cy="400" r="100" fill="#E2CFBA" opacity="0.5" />
+  <path d="M 50 650 Q 250 520 550 650" fill="none" stroke="#D1BEA4" stroke-width="2" stroke-dasharray="6,6" opacity="0.7"/>
+
+  <!-- Compass / Meaning motif in background -->
+  <g transform="translate(480, 140) scale(0.6)" opacity="0.35">
+    <circle cx="0" cy="0" r="70" fill="none" stroke="#1E293B" stroke-width="3" />
+    <circle cx="0" cy="0" r="50" fill="none" stroke="#C27852" stroke-width="2" stroke-dasharray="4,4" />
+    <polygon points="0,-45 8,0 0,45 -8,0" fill="#C27852" />
+    <polygon points="-45,0 0,8 45,0 0,-8" fill="#1E293B" />
+  </g>
+
+  <!-- Professional Figure Silhouette / Illustration -->
+  <g id="figure" transform="translate(300, 380)">
+    <!-- Shoulders & Coat -->
+    <path d="M -170 320 L -150 200 C -140 140 -80 110 0 110 C 80 110 140 140 150 200 L 170 320 Z" fill="url(#suitGrad)" />
+    
+    <!-- Shirt Collar / Lapels -->
+    <path d="M -50 115 L 0 190 L 50 115 Z" fill="#FFFFFF" />
+    <path d="M -20 150 L 0 250 L 20 150 Z" fill="url(#accentGrad)" opacity="0.9" />
+    <path d="M -70 120 L -30 200 L -50 200 Z" fill="#334155" />
+    <path d="M 70 120 L 30 200 L 50 200 Z" fill="#334155" />
+
+    <!-- Neck -->
+    <rect x="-32" y="50" width="64" height="70" rx="10" fill="#E5B99A" />
+    <path d="M -32 85 Q 0 100 32 85 L 32 110 L -32 110 Z" fill="#D4A280" opacity="0.3" />
+
+    <!-- Head -->
+    <ellipse cx="0" cy="20" rx="65" ry="75" fill="#E5B99A" />
+
+    <!-- Hair -->
+    <path d="M -70 10 C -70 -60 -40 -85 0 -85 C 40 -85 70 -60 70 10 C 60 -40 30 -65 0 -65 C -30 -65 -60 -40 -70 10 Z" fill="#2D2421" />
+    <path d="M -68 15 C -65 -40 0 -70 55 -55 C 68 -30 68 5 68 15 C 60 -10 35 -35 0 -35 C -35 -35 -58 -10 -68 15 Z" fill="#3D312E" />
+
+    <!-- Ears -->
+    <ellipse cx="-65" cy="25" rx="10" ry="18" fill="#D4A280" />
+    <ellipse cx="65" cy="25" rx="10" ry="18" fill="#D4A280" />
+
+    <!-- Glasses (Intellectual, warm, clinical look) -->
+    <g stroke="#2D3748" stroke-width="4" fill="rgba(255,255,255,0.4)">
+      <rect x="-52" y="0" width="40" height="28" rx="8" />
+      <rect x="12" y="0" width="40" height="28" rx="8" />
+      <line x1="-12" y1="12" x2="12" y2="12" />
+      <line x1="-52" y1="10" x2="-65" y2="14" />
+      <line x1="52" y1="10" x2="65" y2="14" />
+    </g>
+
+    <!-- Friendly Smile -->
+    <path d="M -18 50 Q 0 65 18 50" fill="none" stroke="#9C522E" stroke-width="3.5" stroke-linecap="round" />
+  </g>
+
+  <!-- Badge at bottom: CRP & Qualidade -->
+  <g transform="translate(60, 590)">
+    <rect width="240" height="60" rx="16" fill="#FFFFFF" filter="drop-shadow(0 8px 16px rgba(0,0,0,0.08))" />
+    <circle cx="35" cy="30" r="18" fill="#E8F0EC" />
+    <path d="M 28 30 L 33 35 L 43 24" fill="none" stroke="#2D7A58" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="65" y="27" font-family="'Plus Jakarta Sans', sans-serif" font-size="13" font-weight="700" fill="#1E293B">Registro Ativo</text>
+    <text x="65" y="45" font-family="'Plus Jakarta Sans', sans-serif" font-size="12" font-weight="500" fill="#64748B">Conselho de Psicologia</text>
+  </g>
+
+  <!-- Floating badge: Logoterapia -->
+  <g transform="translate(380, 520)">
+    <rect width="180" height="52" rx="16" fill="#1E293B" filter="drop-shadow(0 8px 16px rgba(0,0,0,0.12))" />
+    <circle cx="30" cy="26" r="12" fill="#C27852" />
+    <path d="M 26 26 L 34 26 M 30 22 L 30 30" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" />
+    <text x="50" y="25" font-family="'Plus Jakarta Sans', sans-serif" font-size="12" font-weight="700" fill="#FFFFFF">Logoterapia</text>
+    <text x="50" y="41" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" font-weight="500" fill="#CBD5E1">Viktor Frankl</text>
+  </g>
+</svg>
