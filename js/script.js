@@ -19,6 +19,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // 5. Scroll suave e cabeçalho ativo
   setupScrollEffects();
+
+  // 6. Botão voltar ao topo
+  setupBackToTop();
 });
 
 /**
@@ -166,5 +169,21 @@ function setupScrollEffects() {
         link.classList.add('active');
       }
     });
+  });
+}
+
+/**
+ * Controla a visibilidade do botão "Voltar ao topo"
+ */
+function setupBackToTop() {
+  const btn = document.querySelector('.back-to-top-btn');
+  if (!btn) return;
+
+  window.addEventListener('scroll', () => {
+    if (window.pageYOffset > 300) {
+      btn.classList.add('visible');
+    } else {
+      btn.classList.remove('visible');
+    }
   });
 }

@@ -8,24 +8,33 @@
 
 /* --- Variáveis - Tema Claro (Padrão) --- */
 :root {
-  --primary: #0F766E;          /* Teal escuro elegante */
+  --primary: #0F766E;
+  /* Teal escuro elegante */
   --primary-hover: #0D655E;
-  --primary-light: #E6F7F7;    /* Fundo suave teal */
-  
-  --secondary: #0891B2;        /* Ciano/teal vivo */
+  --primary-light: #E6F7F7;
+  /* Fundo suave teal */
+
+  --secondary: #0891B2;
+  /* Ciano/teal vivo */
   --secondary-gradient: linear-gradient(135deg, #0891B2 0%, #0F766E 100%);
-  
-  --dark: #0F172A;             /* Ardósia quase preto para títulos */
-  --text-main: #334155;        /* Ardósia escuro para texto padrão */
-  --text-muted: #64748B;       /* Texto secundário */
-  
-  --bg-page: #F8FAFC;          /* Fundo sutil da página */
-  --bg-surface: #FFFFFF;       /* Fundo de cartões */
-  --bg-alt: #F1F5F9;           /* Fundo alternado */
-  
+
+  --dark: #0F172A;
+  /* Ardósia quase preto para títulos */
+  --text-main: #334155;
+  /* Ardósia escuro para texto padrão */
+  --text-muted: #64748B;
+  /* Texto secundário */
+
+  --bg-page: #F8FAFC;
+  /* Fundo sutil da página */
+  --bg-surface: #FFFFFF;
+  /* Fundo de cartões */
+  --bg-alt: #F1F5F9;
+  /* Fundo alternado */
+
   --border: #E2E8F0;
   --border-focus: #0F766E;
-  
+
   --header-bg: rgba(255, 255, 255, 0.94);
   --footer-bg: #0F172A;
   --footer-text: #94A3B8;
@@ -55,24 +64,31 @@
 
 /* --- Variáveis - Tema Escuro (Dark Mode) --- */
 [data-theme="dark"] {
-  --primary: #14B8A6;          /* Teal vibrante para contraste no escuro */
+  --primary: #14B8A6;
+  /* Teal vibrante para contraste no escuro */
   --primary-hover: #2DD4BF;
   --primary-light: rgba(20, 184, 166, 0.15);
-  
+
   --secondary: #38BDF8;
   --secondary-gradient: linear-gradient(135deg, #38BDF8 0%, #14B8A6 100%);
-  
-  --dark: #F8FAFC;             /* Títulos quase brancos */
-  --text-main: #CBD5E1;        /* Texto cinza claro legível */
-  --text-muted: #94A3B8;       /* Texto secundário */
-  
-  --bg-page: #0B0F19;          /* Fundo escuro profundo */
-  --bg-surface: #141D2E;       /* Superfície dos cards */
-  --bg-alt: #0E1626;           /* Seção alternada */
-  
+
+  --dark: #F8FAFC;
+  /* Títulos quase brancos */
+  --text-main: #CBD5E1;
+  /* Texto cinza claro legível */
+  --text-muted: #94A3B8;
+  /* Texto secundário */
+
+  --bg-page: #0B0F19;
+  /* Fundo escuro profundo */
+  --bg-surface: #141D2E;
+  /* Superfície dos cards */
+  --bg-alt: #0E1626;
+  /* Seção alternada */
+
   --border: #243048;
   --border-focus: #14B8A6;
-  
+
   --header-bg: rgba(15, 23, 42, 0.92);
   --footer-bg: #070A10;
   --footer-text: #64748B;
@@ -84,7 +100,9 @@
 }
 
 /* Reset Básico */
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -105,7 +123,8 @@ body {
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-img, svg {
+img,
+svg {
   display: block;
   max-width: 100%;
 }
@@ -233,7 +252,8 @@ button {
   transform: translateY(-2px);
 }
 
-.icon-whatsapp, .icon-instagram {
+.icon-whatsapp,
+.icon-instagram {
   width: 22px;
   height: 22px;
   flex-shrink: 0;
@@ -303,7 +323,8 @@ button {
   padding: 0.25rem 0;
 }
 
-.nav-link:hover, .nav-link.active {
+.nav-link:hover,
+.nav-link.active {
   color: var(--primary);
 }
 
@@ -378,6 +399,7 @@ button {
 [data-theme="light"] .icon-sun {
   display: none;
 }
+
 [data-theme="light"] .icon-moon {
   display: block;
 }
@@ -386,6 +408,7 @@ button {
 [data-theme="dark"] .icon-sun {
   display: block;
 }
+
 [data-theme="dark"] .icon-moon {
   display: none;
 }
@@ -760,27 +783,36 @@ button {
 }
 
 .contact-info-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 1.5rem;
-  padding-top: 2rem;
+  display: grid; /* Grid para informações de contato */
+  grid-template-columns: 1fr 1fr; /* Duas colunas para desktop */
+  gap: 1.25rem 5rem; /* Espaçamento entre linhas e colunas */
+  padding-top: 2rem; /* Espaçamento superior */
   border-top: 1px solid var(--border);
-  text-align: center;
+  text-align: left;
 }
 
 .info-item {
   display: flex;
   flex-direction: column;
-  gap: 0.35rem;
+  gap: 0.5rem;
   font-size: 0.95rem;
 }
 
 .info-label {
-  font-size: 0.78rem;
+  font-size: 0.75rem;
   text-transform: uppercase;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.06em;
   color: var(--text-muted);
-  font-weight: 600;
+  font-weight: 700;
+}
+
+/* Botão dentro do info-item — centralizado e alinhado às bordas da célula */
+.btn-contact {
+  padding: 0.7rem 1.25rem; /* Ajuste de padding para melhor aparência */
+  font-size: 0.92rem; 
+  width: 80%; /* Ocupa toda a largura da célula */
+  justify-content: center; /* Centraliza o conteúdo do botão */
+  border-radius: 100px; /* Borda arredondada */
 }
 
 .info-link {
@@ -792,39 +824,6 @@ button {
 .info-link:hover {
   color: #E1306C;
   text-decoration: underline;
-}
-
-/* ==================== BOTÃO FLUTUANTE WHATSAPP ==================== */
-.floating-whatsapp {
-  position: fixed;
-  bottom: 2rem;
-  right: 2rem;
-  z-index: 999;
-}
-
-.floating-whatsapp-btn {
-  display: flex;
-  align-items: center;
-  gap: 0.65rem;
-  background-color: var(--whatsapp);
-  color: #FFFFFF;
-  padding: 0.85rem 1.35rem;
-  border-radius: var(--radius-full);
-  box-shadow: 0 6px 24px var(--whatsapp-shadow);
-  font-weight: 700;
-  font-size: 0.95rem;
-  transition: var(--transition);
-}
-
-.floating-whatsapp-btn svg {
-  width: 26px;
-  height: 26px;
-}
-
-.floating-whatsapp-btn:hover {
-  background-color: var(--whatsapp-hover);
-  transform: translateY(-3px) scale(1.02);
-  box-shadow: 0 8px 30px var(--whatsapp-shadow);
 }
 
 /* ==================== FOOTER ==================== */
@@ -910,6 +909,50 @@ button {
   gap: 1rem;
   font-size: 0.82rem;
   color: #64748B;
+}
+
+p.dev-credit {
+  font-size: 0.82rem;
+  color: #64748B;
+  display: flex; /* Alinha verticalmente o texto e o ícone */
+  align-items: center; /* Alinha verticalmente o texto e o ícone */
+  justify-content: center; /* Centraliza o texto e o ícone */
+  margin-top: 0.9rem; /* Espaçamento superior */
+}
+
+/* ==================== BOTÃO VOLTAR AO TOPO ==================== */
+.back-to-top-btn {
+  position: fixed;
+  bottom: 6rem;
+  right: 2rem;
+  z-index: 998;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: var(--bg-surface);
+  border: 1.5px solid var(--border);
+  box-shadow: var(--shadow-md);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease, transform 0.25s ease;
+}
+
+.back-to-top-btn.visible {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.back-to-top-btn:hover {
+  transform: translateY(-3px);
+  border-color: var(--primary);
+}
+
+.back-to-top-btn img {
+  width: 20px;
+  height: 20px;
 }
 
 /* ==================== RESPONSIVIDADE ==================== */
@@ -1014,19 +1057,21 @@ button {
     width: 100%;
   }
 
-  .contact-cta-block {
-    flex-direction: column;
+
+  .contact-info-grid {
+    grid-template-columns: 1fr;
   }
 
-  .contact-cta-block .btn {
-    width: 100%;
+  .btn-contact {
+    justify-content: center;
   }
 
   .card {
     padding: 1.75rem 1.25rem;
   }
 
-  .about-card, .contact-box {
+  .about-card,
+  .contact-box {
     padding: 2rem 1.25rem;
   }
 

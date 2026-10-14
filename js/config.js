@@ -26,8 +26,8 @@ const SITE_CONFIG = {
   whatsappMensagemPadrao: "Olá, Alexandre! Gostaria de informações sobre agendamento de consulta de psicoterapia.",
   
   // Rede Social Instagram (Altere para seu usuário e link reais)
-  instagramUsuario: "@alexandreteixeira.psi",
-  instagramUrl: "https://instagram.com/",
+  instagramUsuario: "@alexandret.psicologo",
+  instagramUrl: "https://www.instagram.com/alexandret.psicologo/",
 
   // Localização e Endereço do Consultório Presencial
   enderecoCompleto: "Rua Vidal de Negreiros, nº 48 – Centro, Prédio Juraci Cavalcante, 3º andar",
